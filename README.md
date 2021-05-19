@@ -16,5 +16,5 @@ Example:
 > make coverage  # Generate a coverage report.
 > make doc       # Generate html documentation.
 ```
-
+napisałem wszystkie komętarze gotowe pod wygenerowanie instrukcji w doxygenie, lecz nie udało mi się wygenerować instrukcji za pomocą doxygena.
 
