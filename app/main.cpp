@@ -236,7 +236,7 @@ re.rot(mac_g);
   }break;
                    case 'r':
         {
-cout<<mac_g;
+std::cout<<mac_g;
   }break;
          case 'm':
         {

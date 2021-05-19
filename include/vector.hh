@@ -41,11 +41,12 @@ public:
 template <int SIZE>
 bool Vector<SIZE>::operator==(const Vector<SIZE> arg) const
 {
-    if(arg[0]== size[0] &&arg[1]== size[1] )
+    for(int i=0; i<SIZE; i++)
+    if(abs(arg[i] - size[i])>0.001  )
     {
-        return true;
+        return false;
    }
-    return false;
+    return true;
     
 }
 
@@ -220,7 +221,7 @@ double &Vector<SIZE>::operator[](int index) {
 template <int SIZE>
 std::ostream &operator << (std::ostream &out, Vector<SIZE> const &tmp) {
     for (int i = 0; i < SIZE; ++i) {
-        out << tmp[i] << "\t";
+        out << tmp[i] << " ";
     }
     return out;
 }
